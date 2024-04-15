@@ -1,19 +1,17 @@
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const MovieList = ({ films }) => {
   return (
     <ul>
-      {" "}
-      MovieList {films}
-      {/* {films.map((movie) => {
+      {films.map((movie) => {
         return (
           <li key={movie.id}>
             <Link state={location} to={`/movies/${movie.id}`}>
               {movie.title}
-            </Link>   
+            </Link>
           </li>
         );
-      })} */}
+      })}
     </ul>
   );
 };

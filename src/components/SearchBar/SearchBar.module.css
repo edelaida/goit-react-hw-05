@@ -1,0 +1,16 @@
+.blokapp {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card:hover {
+  transform: scale(1.03);
+  cursor: zoom-in;
+}
+.bigcard {
+  width: 90%;
+  margin: auto;
+}
+.infoform {
+  padding-left: 100px;
+  padding-top: 10px;
+}

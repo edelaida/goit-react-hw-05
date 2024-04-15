@@ -5,10 +5,10 @@
 }
 .navLink {
   display: flex;
-  padding: 15px 20px;
-  border: 1px solid black;
+  padding: 10px 15px;
+  border: 1px solid rgb(133, 118, 118);
   background-color: transparent;
-  color: black;
+  color: rgb(51, 24, 24);
   text-decoration: none;
   transition: all 0.3s;
 }

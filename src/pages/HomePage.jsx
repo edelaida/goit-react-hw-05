@@ -1,7 +1,7 @@
 //import React from "react";
 import MovieList from "../components/MovieList/MovieList.jsx";
 import { useState, useEffect } from "react";
-import { getTrending } from "../services/Api.js";
+import { getTrending } from "../services/api.js";
 import Loader from "../components/Loader/Loader.jsx";
 
 const HomePage = () => {

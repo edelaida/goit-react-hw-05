@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getDetails } from "../services/Api.js";
+import { getDetails } from "../services/api.js";
 import MovieCast from "../components/MovieCast/MovieCast.jsx";
 import MovieReviews from "../components/MovieReviews/MovieReviews.jsx";
 import { Outlet, useParams } from "react-router-dom";

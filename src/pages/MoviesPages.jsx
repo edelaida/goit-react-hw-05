@@ -2,7 +2,7 @@
 
 import MovieList from "../components/MovieList/MovieList.jsx";
 import { useState, useEffect } from "react";
-import { searchMovie } from "../services/Api.js";
+import { searchMovie } from "../services/api.js";
 import SearchBar from "../components/SearchBar/SearchBar.jsx";
 import Loader from "../components/Loader/Loader.jsx";
 

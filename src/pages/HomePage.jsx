@@ -1,4 +1,3 @@
-//import React from "react";
 import MovieList from "../components/MovieList/MovieList.jsx";
 import { useState, useEffect } from "react";
 import { getTrending } from "../services/api.js";

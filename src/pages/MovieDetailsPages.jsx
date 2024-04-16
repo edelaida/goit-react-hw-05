@@ -1,11 +1,9 @@
 import { useState, useEffect, useRef } from "react";
-
 import MovieCast from "../components/MovieCast/MovieCast.jsx";
 import MovieReviews from "../components/MovieReviews/MovieReviews.jsx";
 import { Link, Route, Routes, useLocation, useParams } from "react-router-dom";
 import { getDetails } from "../services/api.js";
 import css from "./MovieDetailsPages.module.css";
-//import css from "../components/Navigation/Navigation.module.css";
 
 const MovieDetailsPages = () => {
   const { movieId } = useParams();
@@ -41,7 +39,13 @@ const MovieDetailsPages = () => {
           <h2>Overview: </h2>
           <p>{details.overview}</p>
           <h2>Genres</h2>
-          <p>{details.genres.map((genre) => genre.name).join(", ")}</p>
+          {/* {details.genres.map((genre) => {
+            return (
+               <li key={genre.id}>
+                <p>{genre.name}</p>
+                </li>
+            );
+          })} */}
         </div>
       </div>
       <div className={css.info}>

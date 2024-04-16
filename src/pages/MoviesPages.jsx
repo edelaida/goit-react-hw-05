@@ -1,5 +1,3 @@
-//import React from 'react'
-
 import MovieList from "../components/MovieList/MovieList.jsx";
 import { useState, useEffect } from "react";
 import { searchMovie } from "../services/api.js";

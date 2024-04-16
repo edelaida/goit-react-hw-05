@@ -1,4 +1,3 @@
-//import { useState } from 'react'
 import { Routes, Route } from "react-router-dom";
 import Loader from "./components/Loader/Loader";
 import { lazy, Suspense } from "react";
@@ -8,8 +7,6 @@ const HomePage = lazy(() => import("./pages/HomePage"));
 const MovieDetailsPages = lazy(() => import("./pages/MovieDetailsPages"));
 const MoviesPages = lazy(() => import("./pages/MoviesPages"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
-
-//import css from "./App.module.css";
 
 export const App = () => {
   return (

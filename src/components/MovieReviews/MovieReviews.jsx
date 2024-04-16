@@ -1,7 +1,39 @@
-//import React from "react";
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import css from "./MovieReviews.module.css";
+import { getReviews } from "../../services/api";
 
 const MovieReviews = () => {
-  return <div>MovieReviews</div>;
+  const { movieId } = useParams();
+  const [moviereviews, setMovieReviews] = useState([]);
+
+  useEffect(() => {
+    async function getMovieReviews() {
+      try {
+        const data = await getReviews(movieId);
+        console.log(data);
+        setMovieReviews(data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    getMovieReviews();
+  }, [movieId]);
+
+  if (moviereviews.length !== 0) {
+    return (
+      <ul className={css.review_list}>
+        {moviereviews.map((review) => (
+          <li key={review.id}>
+            <p className={css.author}>Author: {review.author}</p>
+            <p>{review.content}</p>
+          </li>
+        ))}
+      </ul>
+    );
+  } else {
+    return <div>Not found</div>;
+  }
 };
 
 export default MovieReviews;

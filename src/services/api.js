@@ -31,9 +31,10 @@ export const searchMovie = async (query) => {
   }
 };
 
-export const getDetails = async (movie_id) => {
+export const getDetails = async (movieId) => {
+  console.log(movieId);
   try {
-    const { data } = await axios.get(`movie/${movie_id}`);
+    const { data } = await axios.get(`/movie/${movieId}`);
     console.log(data);
     return data;
   } catch (error) {

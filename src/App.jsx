@@ -20,8 +20,8 @@ export const App = () => {
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/movies/:movie_id/*" element={<MovieDetailsPages />} />
           <Route path="/movies" element={<MoviesPages />} />
+          <Route path="/movies/:movieId/*" element={<MovieDetailsPages />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>

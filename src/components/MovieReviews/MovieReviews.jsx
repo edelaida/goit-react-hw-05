@@ -11,8 +11,7 @@ const MovieReviews = () => {
     async function getMovieReviews() {
       try {
         const data = await getReviews(movieId);
-        console.log(data);
-        setMovieReviews(data);
+        setMovieReviews(data.results);
       } catch (error) {
         console.log(error);
       }
@@ -25,7 +24,7 @@ const MovieReviews = () => {
       <ul className={css.review_list}>
         {moviereviews.map((review) => (
           <li key={review.id}>
-            <p className={css.author}>Author: {review.author}</p>
+            <h3 className={css.author}>Author: {review.author}</h3>
             <p>{review.content}</p>
           </li>
         ))}

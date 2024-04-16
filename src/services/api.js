@@ -42,7 +42,6 @@ export const getDetails = async (movieId) => {
 export const getCredits = async (movieId) => {
   try {
     const { data } = await axios.get(`/movie/${movieId}/credits`);
-    console.log(data);
     return data;
   } catch (error) {
     console.error("Error fetching trending movies:", error);

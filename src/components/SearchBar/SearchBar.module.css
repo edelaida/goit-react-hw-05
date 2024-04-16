@@ -1,4 +1,4 @@
-.blokapp {
+/* .blokapp {
   display: flex;
   flex-wrap: wrap;
 }
@@ -9,8 +9,8 @@
 .bigcard {
   width: 90%;
   margin: auto;
-}
+} */
 .infoform {
   padding-left: 100px;
-  padding-top: 10px;
+  padding-top: 20px;
 }

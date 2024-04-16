@@ -1,0 +1,13 @@
+.page {
+  padding: 10px 20px;
+}
+.list {
+  display: flex;
+  gap: 20px;
+}
+.detal {
+  flex-direction: column;
+}
+.info {
+  padding-top: 20px;
+}

@@ -18,9 +18,8 @@ const SearchBar = ({ onSearchBar }) => {
 
   return (
     <form className={css.infoform} onSubmit={handleSubmit}>
-      <h2>new films</h2>
       <input type="text" name="film" placeholder="Search films..." />
-      <button type="submit">▶ Serch new films</button>
+      <button type="submit">▶ Serch films</button>
       <Toaster />
     </form>
   );
